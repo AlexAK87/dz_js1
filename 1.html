@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Alexey Kurochkin">
+	<title>Alexey Kurochkin > Home Task 3</title>
+	<style>
+		body { font-family: Consolas, Courier, monospace; }
+	</style>
+</head>
+<body>
+    <h3>Задача №1</h3>
+	<p>
+        С помощью цикла for написать алгоритм для вывода чисел (выводите в консоль, с помощью console.log) от 0 до 10
+        включительно, чтобы результат выглядел так:
+        <br>0 – это ноль
+        <br>1 – нечетное число
+        <br>2 – четное число
+        <br>3 – нечетное число
+        <br>…
+        <br>10 – четное число
+    </p>
+	<hr>
+	<p>
+        <script>
+            function startScript() {
+                for (var count = 0; count < 11; count++) 
+
+                    if (count == 0) {
+                        console.log(count + ' это ноль');
+                    } else if (count%2 == 0) {
+                        console.log(count + ' четное число');
+                    } else {
+                        console.log(count + ' нечетное число');
+                    }
+            }
+        </script>
+	<p>
+		<a href="javascript:void(0);" onclick="startScript();">Запустить выполнение задачи №1</a>
+	</p>
+	</p>
+	<hr>
+</body>
+</html>

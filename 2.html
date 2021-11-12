@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Alexey Kurochkin">
+	<title>Alexey Kurochkin > Home Task 3</title>
+	<style>
+		body { font-family: Consolas, Courier, monospace; }
+	</style>
+</head>
+<body>
+    <h3>Задача №2</h3>
+	<p>
+        Выведите в консоль значения, указанные рядом с комментариями:
+        <br>const post = {
+        <br>author: "John", //вывести этот текст
+        <br>postId: 23,
+        <br>comments: [
+        <br>      {
+        <br>        userId: 10,
+        <br>        userName: "Alex",
+        <br>        text: "lorem ipsum",
+        <br>        rating: {
+        <br>            likes: 10,
+        <br>            dislikes: 2 //вывести это число
+        <br>        }   
+        <br>    },
+        <br>    {
+        <br>        userId: 5, //вывести это число
+        <br>        userName: "Jane",
+        <br>        text: "lorem ipsum 2", //вывести этот текст
+        <br>        rating: {
+        <br>        likes: 3,
+        <br>        dislikes: 1
+        <br>        }
+        <br>    },
+        <br>]   
+        <br>};
+    </p>
+	<hr>
+	<p>
+        <script>
+            function startScript() {
+                const post = {
+                        author: "John", //вывести этот текст
+                        postId: 23,
+                        comments: [
+                            {
+                                userId: 10,
+                                userName: "Alex",
+                                text: "lorem ipsum",
+                                rating: {
+                                    likes: 10,
+                                    dislikes: 2 //вывести это число
+                                }   
+                            },
+                            {
+                                userId: 5, //вывести это число
+                                userName: "Jane",
+                                text: "lorem ipsum 2", //вывести этот текст
+                                rating: {
+                                    likes: 3,
+                                    dislikes: 1
+                                }
+                            },
+                        ]   
+                    };
+                console.log("Author: " + post.author)
+                console.log("Comment 1 (dislikes): " + post.comments[0].rating.dislikes)
+                console.log("Comment 2 (userId): " + post.comments[1].userId + " Comment 2 (text): " + post.comments[1].text)
+            }
+        </script>
+	<p>
+		<a href="javascript:void(0);" onclick="startScript();">Запустить выполнение задачи №2</a>
+	</p>
+	</p>
+	<hr>
+</body>
+</html>
