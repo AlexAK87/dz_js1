@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Alexey Kurochkin">
+	<title>Alexey Kurochkin > Home Task 3</title>
+	<style>
+		body { font-family: Consolas, Courier, monospace; }
+	</style>
+</head>
+<body>
+    <h3>Задача №3</h3>
+	<p>
+        Перед вами находится массив с продуктами, сегодня распродажа и вам нужно на каждый товар применить скидку
+        15%, можете использовать метод forEach.
+    </p>
+	<hr>
+	<p>
+        <script>
+            function startScript() {
+                "use strict";
+                 const products = [        
+                    {        
+                        id: 3,        
+                        price: 200,        
+                    },        
+                    {        
+                        id: 4,        
+                        price: 900,        
+                    },        
+                    {
+                        id: 1,        
+                        price: 1000,        
+                    },        
+                    ];
+
+                    products.forEach(element => {
+                        console.log(element);
+                        element.price = element.price - element.price * 0.15;            
+                    });
+
+                    console.log('после:');
+                    products.forEach(element => {
+                        console.log(element);            
+                    });
+            }
+        </script>
+	<p>
+		<a href="javascript:void(0);" onclick="startScript();">Запустить выполнение задачи №3</a>
+	</p>
+	</p>
+	<hr>
+</body>
+</html>
